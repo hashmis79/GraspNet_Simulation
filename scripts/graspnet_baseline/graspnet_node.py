@@ -56,9 +56,7 @@ def get_and_process_data(color_im,depth_im):
     # load data
     color = rnp.image.image_to_numpy(color_im)/255.0
     depth = rnp.image.image_to_numpy(depth_im)*63/0.5403085
-    # workspace_mask = np.array(Image.open(os.path.join(ROOT_DIR, data_dir, 'workspace_mask.png')))
     workspace_mask = np.ones((480,640),dtype=bool)
-    print(workspace_mask)
     meta = scio.loadmat(os.path.join(ROOT_DIR, data_dir, 'meta.mat'))
     intrinsic = meta['intrinsic_matrix']
     factor_depth = meta['factor_depth']
@@ -117,24 +115,25 @@ def vis_grasps(gg, cloud):
     grippers = gg.to_open3d_geometry_list()
     o3d.visualization.draw_geometries([cloud, *grippers])
 
-def read_images(req):
-    raw_color = req.color_image
-    raw_depth = req.depth_image
-    x = CvBridge()
-    try:
-        color_im = x.imgmsg_to_cv2(raw_color, "rgb8")
-        depth_im = (x.imgmsg_to_cv2(raw_depth, desired_encoding="passthrough"))
+# def read_images(req):
+#     raw_color = req.color_image
+#     raw_depth = req.depth_image
+#     x = CvBridge()
+#     try:
+#         color_im = x.imgmsg_to_cv2(raw_color, "rgb8")
+#         depth_im = (x.imgmsg_to_cv2(raw_depth, desired_encoding="passthrough"))
         
-    except CvBridgeError as cv_bridge_exception:
-        rospy.logerr(cv_bridge_exception)
+#     except CvBridgeError as cv_bridge_exception:
+#         rospy.logerr(cv_bridge_exception)
     
-    return raw_color, raw_depth
+#     return raw_color, raw_depth
 
 def plan_grasp(req):
+    #Used for calculating grasp poses
     net = get_net()
     pose = Pose()
-    color_im, depth_im = read_images(req)
-    end_points, cloud = get_and_process_data(color_im, depth_im)
+    # color_im, depth_im = read_images(req)
+    end_points, cloud = get_and_process_data(req.color_image, req.depth_image)
     gg = get_grasps(net, end_points)
     if cfgs.collision_thresh > 0:
         gg = collision_detection(gg, np.array(cloud.points))

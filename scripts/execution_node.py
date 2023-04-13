@@ -199,7 +199,7 @@ class grasp_net():
         print("Sync")
         self.sync_subscriber()
         rospy.sleep(15)
-        py = input("Enter any number")
+        py = input("Enter any number to proceed (To be done after closing the visualizations)")
         self.final_transform()
         self.pre_grasp_action()
         rospy.sleep(5) 
