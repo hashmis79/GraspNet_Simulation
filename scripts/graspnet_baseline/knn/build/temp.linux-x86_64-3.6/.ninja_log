@@ -1,0 +1,4 @@
+# ninja log v5
+1	729	1681315136805454697	/home/saad/final_ws/src/manipulator_1/scripts/graspnet-baseline/knn/build/temp.linux-x86_64-3.6/home/saad/final_ws/src/manipulator_1/scripts/graspnet-baseline/knn/src/cuda/knn.o	f707f96a850a8659
+0	12142	1681315148218427425	/home/saad/final_ws/src/manipulator_1/scripts/graspnet-baseline/knn/build/temp.linux-x86_64-3.6/home/saad/final_ws/src/manipulator_1/scripts/graspnet-baseline/knn/src/cpu/knn_cpu.o	9ce49fbf97f489d9
+0	20187	1681315156259059857	/home/saad/final_ws/src/manipulator_1/scripts/graspnet-baseline/knn/build/temp.linux-x86_64-3.6/home/saad/final_ws/src/manipulator_1/scripts/graspnet-baseline/knn/src/vision.o	c1227589b09eeb81

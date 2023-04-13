@@ -1,0 +1,12 @@
+# ninja log v5
+4	37629	1681315106850172587	/home/saad/final_ws/src/manipulator_1/scripts/graspnet-baseline/pointnet2/build/temp.linux-x86_64-3.6/_ext_src/src/group_points_gpu.o	f336113e129e72d1
+4	37887	1681315107110208034	/home/saad/final_ws/src/manipulator_1/scripts/graspnet-baseline/pointnet2/build/temp.linux-x86_64-3.6/_ext_src/src/interpolate_gpu.o	c6b450b852527bc3
+4	37979	1681315107202220445	/home/saad/final_ws/src/manipulator_1/scripts/graspnet-baseline/pointnet2/build/temp.linux-x86_64-3.6/_ext_src/src/ball_query_gpu.o	835928049a6bd0e6
+1	38571	1681315107790299771	/home/saad/final_ws/src/manipulator_1/scripts/graspnet-baseline/pointnet2/build/temp.linux-x86_64-3.6/_ext_src/src/cylinder_query_gpu.o	e8986b72b37a55d5
+0	44925	1681315114143108413	/home/saad/final_ws/src/manipulator_1/scripts/graspnet-baseline/pointnet2/build/temp.linux-x86_64-3.6/_ext_src/src/cylinder_query.o	7664d4ec57b7baa5
+3	46436	1681315115655288818	/home/saad/final_ws/src/manipulator_1/scripts/graspnet-baseline/pointnet2/build/temp.linux-x86_64-3.6/_ext_src/src/sampling.o	578794cfd7dffcf9
+2	46530	1681315115751300171	/home/saad/final_ws/src/manipulator_1/scripts/graspnet-baseline/pointnet2/build/temp.linux-x86_64-3.6/_ext_src/src/interpolate.o	dec27d8e4f3d6ab1
+3	46773	1681315115995329025	/home/saad/final_ws/src/manipulator_1/scripts/graspnet-baseline/pointnet2/build/temp.linux-x86_64-3.6/_ext_src/src/ball_query.o	8475168a8c42416
+2	46851	1681315116071337893	/home/saad/final_ws/src/manipulator_1/scripts/graspnet-baseline/pointnet2/build/temp.linux-x86_64-3.6/_ext_src/src/group_points.o	58bb9c216ab03128
+1	50522	1681315119743756606	/home/saad/final_ws/src/manipulator_1/scripts/graspnet-baseline/pointnet2/build/temp.linux-x86_64-3.6/_ext_src/src/bindings.o	de41b01e00413768
+37629	53458	1681315122684076252	/home/saad/final_ws/src/manipulator_1/scripts/graspnet-baseline/pointnet2/build/temp.linux-x86_64-3.6/_ext_src/src/sampling_gpu.o	1148e29e3d738dc3

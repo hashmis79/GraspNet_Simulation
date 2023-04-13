@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: manipulator_1
+    relative_path: config/gazebo_panda.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/panda.srdf
+  CONFIG:
+    author_name: saad
+    author_email: hashmis104@gmail.com
+    generated_timestamp: 1681336041
